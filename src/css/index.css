@@ -1,0 +1,12 @@
+
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 0.08rem;
+    font-size: calc(0.8rem + 0.5vw);
+}
+.wrapper {
+    width: min(80%, 90rem);
+    margin-inline: auto;
+}

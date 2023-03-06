@@ -1,0 +1,83 @@
+:root {
+    --clr-navbarBG: rgb(30, 65, 117);
+    --clr-yellow: rgb(230, 201, 43);
+    --clr-font: #fff;
+    --clr-lightgray: rgb(241, 241, 241);
+    --clr-darkgray: rgb(104, 104, 104);
+}
+
+.image-container  {
+    
+    text-align: center;
+    min-height: 40vh;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fff;
+}
+.image-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/jobscripture.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    filter: brightness(40%);
+}
+.service-container {
+    min-height: 70vh;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /*------------------Form----------------*/
+
+ .two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+ }
+ .two-col .col {
+    width: 50%;
+ }
+.service .para {
+    width: 50%;
+    color: var(--clr-darkgray);
+}
+ .service h3 {
+    margin: 0;
+ }
+.two-col .online .form{
+display: flex;
+flex-direction: column;
+}
+.form .form-group {
+    padding: 0.5rem 0;
+}
+.form .form-group  input, textarea {
+    width: 100%;
+    padding: 0.5rem 0.2rem;
+    outline: none;
+    border: 1px solid lightgray;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form .form-group .submit-button {
+    border: none;
+    background: var(--clr-yellow);
+    padding: 0.5rem 1rem;
+    color: var(--clr-font);
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 50px 50px;
+    transition: 0.2s ease-in-out;
+}
+.form .form-group .submit-button:hover {
+    background: var(--clr-darkgray);
+}

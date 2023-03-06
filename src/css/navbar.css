@@ -1,0 +1,44 @@
+:root {
+    --clr-navbarBG: rgb(30, 65, 117);
+    --clr-yellow: rgb(230, 201, 43);
+    --clr-font: #fff;
+}
+
+.navbar-container {
+    background: var(--clr-navbarBG);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo {
+    color: var(--clr-font);
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+nav .logo:hover {
+    color: var(--clr-yellow);
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li {
+    list-style-type: none;
+    padding: 1rem;
+}
+ul li a {
+    text-decoration: none;
+    color: var(--clr-font);
+    transition: 0.2s ease-in-out;
+}
+ul li a:hover {
+    color: var(--clr-yellow);
+}
+ul li .donate-button {
+    background: var(--clr-yellow);
+    padding: 0.5rem 1rem;
+    border-radius: 50px 50px;
+}
